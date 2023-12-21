@@ -58,7 +58,9 @@ CREATE TABLE `complaint` (
 --
 
 INSERT INTO `complaint` (`fcomplaintid`, `fcomplain`, `userid`) VALUES
-(8, 'Hello Sir, when will the fertilizer will be distributed. ', 6);
+(8, 'Hello Sir, when will the fertilizer will be distributed. ', 6),
+(9, 'We need good price for our crops', 7);
+
 
 -- --------------------------------------------------------
 
@@ -78,7 +80,8 @@ CREATE TABLE `farmer` (
 --
 
 INSERT INTO `farmer` (`userid`, `name`, `email`, `password`) VALUES
-(6, 'Prajina ', 'prajinakhusu@gmail.com', '1234');
+(6, 'Prajina ', 'prajinakhusu@gmail.com', '1234'),
+(7, 'Kripa ', 'kripakhwalapala@gmail.com', '1212');
 
 -- --------------------------------------------------------
 
@@ -101,7 +104,10 @@ CREATE TABLE `farmerproduct` (
 
 INSERT INTO `farmerproduct` (`CropName`, `quantity`, `contact`, `remarks`, `farmerpostid`, `userid`) VALUES
 ('Wheat', 1000, '9869619868', 'Prajina Khusu, Itachhen-15 ', 26, 6),
-('Cabbge ', 10, '9851611111', ' Itachhen', 27, 6);
+('Cabbge ', 10, '9851611111', ' Itachhen', 27, 6),
+('Rice', 5, '9808645487', 'Bhat', 28, 7);
+
+  ;
 
 -- --------------------------------------------------------
 
@@ -121,7 +127,8 @@ CREATE TABLE `seller` (
 --
 
 INSERT INTO `seller` (`userid`, `name`, `email`, `password`) VALUES
-(5, 'Sachin', 'sachin@gmail.com', '1234');
+(5, 'Sachin', 'sachin@gmail.com', '1234'),
+(6, 'Kri', 'kripaKh@gmail.com', '1111');
 
 -- --------------------------------------------------------
 
@@ -168,7 +175,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`userid`, `name`, `email`, `password`) VALUES
-(1, 'Bhaktapur', 'Bhaktapur@gmail.com', '1234');
+(1, 'Bhaktapur', 'Bhaktapur@gmail.com', '1234'),
+(2, 'Tulachhen', 'kripaaa@gmail.com', '1313');
 
 --
 -- Indexes for dumped tables
